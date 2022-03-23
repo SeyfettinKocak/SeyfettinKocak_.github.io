@@ -1,22 +1,85 @@
-+<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title> Html Çalışması </title>
+
+<style type="text/css">
+    body { 
+         
+        margin: 0;
+        padding: 0;
+    }
+
+    .overlay {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        z-index: -100;
+    }
+        #myVideo{
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 100%;
+            min-width: 100%;
+        }
+        .text{
+
+            position: absolute;
+            width: 100%;
+            min-height: 100%;
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+            
+        }    
+        
+        
+        .text{
+            position: absolute;
+            top: 50%;    
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: white;
+                background: rgba(0, 0, 0, 0.219);            
+            }
+        
+           
+</style>
+
 </head>
 <body>
-    <div align="center"><p>
-    <h2>Kişisel web sayfama hoşgeldiniz</h2>
-    <h3>Merhaba, benim  adım Seyfettin Koçak. 18 yaşımdayım ve  Eskişehir Osmangazi Üniversitesi Bilgisayar Proğramcılığı bölümünde okumaktayım. </h3> 
-    <h3>Gelecekteki planım C# ve Unitiy dillerini öğrenip oyun yazılımları yazmaktır. </h3>
-    <h3>Uçak teknolojileri ve teknolojik gelişimlere ilgi duymaktayım. </h3>
-    <h3>Bana ulaşabileceğiniz sosyal medya hesaplarım ve mail hesabım : </h3>
-    <a href="http://Instagram.com/seyfettin.kocak.52" target=new><img src="http://in.sitekodlari.com/insta/8.png" border="0"></a>
-    <a href="mailto:seyfettink578@gmail.com"> Mail adresim </a>
-</p> </div>
-
-</body>
+    <div class = "overlay">
+        <video id="myVideo"    autoplay="true" loop muted>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.ogg" type="video/ogg">    
+        <source src="video.webm" type="video/webm">
+        </video>    
+        </div>
+        <center>   
+          
+            <div class="text"> 
+            <br>
+            <br>
+            <br>
+            <br>
+                <h2>Kişisel web sayfama hoşgeldiniz</h2>
+            <h3>Merhaba, benim  adım Seyfettin Koçak </h3>
+            <h3>Eskişehir Osmangazi Üniversitesi Bilgisayar Proğramcılığı bölümünde okumaktayım. </h3> 
+            <h3>Gelecekteki planım C# ve Unitiy dillerini öğrenip oyun yazılımları yazmaktır. </h3>
+            <h3>Uçak teknolojileri ve teknolojik gelişimlere ilgi duymaktayım. </h3>
+            <h3>Bana ulaşabileceğiniz sosyal medya hesaplarım ve mail hesabım : </h3>
+            <a href="https://www.linkedin.com/in/seyfettin-koçak-240699235/" target=new><img src="linkedin.png" border="0"></a>
+            &nbsp; <a href="http://Instagram.com/seyfettin.kocak.52" target=new><img src="instagram.png" border="0"></a>
+            &nbsp; <a href="" target=new><img src="twitter.png" border="0"></a>
+            &nbsp; <a href="mailto:seyfettink578@gmail.com"target=new><img src="gmail.png" border="0"></a>
+            
+    </div>
+    </center>
+    </body>
 
 </html>
